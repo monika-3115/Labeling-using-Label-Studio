@@ -1,0 +1,4 @@
+text,header,link
+"If you're using Azure in a nonproduction environment or just trying it out, choose the Developer plan to get an initial response to your Azure technical support requests within one business day."," Trial, testing, and development ",https://azure.microsoft.com/en-in/support/plans/developer/
+"When you’re running a production workload on Azure, get Azure technical support initial response times between one hour and one business day, based on case severity, with the Standard plan.", Production workloads ,https://azure.microsoft.com/en-in/support/plans/standard/
+"If you need faster response times, advisory services, and high-severity incident escalation management from a collaborative management pool, choose Professional Direct (ProDirect) support.", Business-critical functions ,https://azure.microsoft.com/en-in/support/plans/prodirect/

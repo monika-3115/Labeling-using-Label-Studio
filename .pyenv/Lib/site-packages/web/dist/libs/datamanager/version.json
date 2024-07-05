@@ -1,0 +1,6 @@
+{
+  "message": "fix: OPTIC-720: Fix e.viewsStore.forEach error (#5849)",
+  "commit": "779ee98dd7d67c343a3a5f7f62f7f7581a17051e",
+  "date": "2024-05-08T14:38:04.000Z",
+  "branch": "develop"
+}
