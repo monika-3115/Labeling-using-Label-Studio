@@ -1,7 +1,8 @@
 
-LABEL_STUDIO_URL = 'https://labelstudio.dealwallet.com/'
-API_KEY = 'ad1a15ed77550e5ff082b9fb10d7e7af18662118'
+LABEL_STUDIO_URL = 'http://localhost:8080/'
+API_KEY = '4c52e98d0117c2ca6342e94dfceeff470016e93b'
 
+import json
 import pandas as pd
 from label_studio_sdk.client import LabelStudio
 import spacy
@@ -21,9 +22,14 @@ class Project:
     def __init__(self, id):
         self.id = id
 
-project = Project(id="4")
+project = Project(id="3")
 
-df = pd.read_csv('scrapped_data.csv')
+# df = pd.read_csv('scrapped_data.csv')
+
+with open('scrapped_data.json', 'r') as file:
+    data = json.load(file)
+
+df = pd.DataFrame(data)
 
 df.dropna(subset=['header'], inplace=True)
 df = df[df['header'].str.strip().astype(bool)]
